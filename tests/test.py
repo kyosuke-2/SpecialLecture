@@ -23,4 +23,3 @@ class TestCSVPrinter(unittest.TestCase):
         except Exception as e:
             print(e)
             self.assertEqual("[Errno 2] No such file or directory: 'sample2.csv'", str(e))
-            pass

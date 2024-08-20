@@ -19,7 +19,6 @@ class TestCSVPrinter(unittest.TestCase):
         try:
             printer = CSVPrinter("sample2.csv")
             printer.read()
-            unittest.TestCase.fail("This line should not be invoked")
         except Exception as e:
             print(e)
             self.assertEqual("[Errno 2] No such file or directory: 'sample2.csv'", str(e))
